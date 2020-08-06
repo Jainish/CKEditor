@@ -2,11 +2,14 @@
 <html>
 <head>
   <script src="https://cdn.tiny.cloud/1/ih4xlcpx2qfgvp2vhocus7cvqw55bi1md6woe5vcyqdyup8o/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdn.ckeditor.com/4.14.1/full/ckeditor.js"></script>
 </head>
 <body>
   <textarea>
     Welcome to TinyMCE!
   </textarea>
+  
+   <textarea name="editor1"></textarea>
   <script>
     tinymce.init({
       selector: 'textarea',
@@ -16,6 +19,8 @@
       tinycomments_mode: 'embedded',
       tinycomments_author: 'Author name'
     });
+    
+    CKEDITOR.replace( 'editor1' );
   </script>
 </body>
 </html>
